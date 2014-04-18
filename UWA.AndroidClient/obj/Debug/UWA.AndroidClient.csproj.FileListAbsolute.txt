@@ -11,3 +11,4 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\icon.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\uploadflags.txt
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.csprojResolveAssemblyReference.cache

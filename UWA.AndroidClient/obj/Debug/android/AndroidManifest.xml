@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="UWA.AndroidClient">
   <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
   <application android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="UWA.AndroidClient" android:name="uwa.androidclient.Activity1">
+    <activity android:icon="@drawable/icon" android:label="UWA.AndroidClient" android:name="uwa.androidclient.HomeActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

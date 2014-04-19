@@ -1,1 +1,1 @@
-<resources><string name="Hello">Hello World, Click Me!</string><string name="ApplicationName">UWA.AndroidClient</string></resources>
+<resources><string name="MapsButtonText">Click me to fetch maps.</string><string name="ApplicationName">UWA.AndroidClient</string></resources>

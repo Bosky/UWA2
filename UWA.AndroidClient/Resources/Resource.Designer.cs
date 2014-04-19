@@ -26,6 +26,8 @@ namespace UWA.AndroidClient
 		
 		public static void UpdateIdValues()
 		{
+			global::UWA.Core.MonoAndroid.Resource.String.ApplicationName = global::UWA.AndroidClient.Resource.String.ApplicationName;
+			global::UWA.Core.MonoAndroid.Resource.String.Hello = global::UWA.AndroidClient.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -61,7 +63,7 @@ namespace UWA.AndroidClient
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int MapsButton = 2131034112;
 			
 			static Id()
 			{
@@ -97,6 +99,9 @@ namespace UWA.AndroidClient
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int MapsButtonText = 2130968578;
 			
 			static String()
 			{

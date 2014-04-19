@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -33,9 +34,17 @@ namespace UWA.AndroidClient
 
             // Get our button from the layout resource,
             // and attach an event to it
-            var button = FindViewById<Button>(Resource.Id.MapsButton);
+            var mapsbutton = FindViewById<Button>(Resource.Id.MapsButton);
+            var newsbutton = FindViewById<Button>(Resource.Id.NewsButton);
 
-            button.Click += MapsClicked;
+            mapsbutton.Click += MapsClicked;
+            newsbutton.Click += NewsClicked;
+        }
+
+        private void NewsClicked(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(NewsActivity));
+            StartActivity(intent);
         }
 
         private void MapsClicked(object sender, EventArgs e)

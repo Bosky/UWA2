@@ -1,1 +1,3 @@
 UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
+UWA.AndroidClient.Adapters.NewsListAdapter;uwa.androidclient.adapters.NewsListAdapter
+UWA.AndroidClient.NewsActivity;uwa.androidclient.NewsActivity

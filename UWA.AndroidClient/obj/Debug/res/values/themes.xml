@@ -1,0 +1,1 @@
+<resources><style name="Theme.SplashGreeting" parent="android:Theme"><item name="android:windowBackground">@drawable/uwa_splash</item></style></resources>

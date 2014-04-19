@@ -13,11 +13,9 @@ using UWA.Core.MonoAndroid;
 
 namespace UWA.AndroidClient
 {
-    [Activity(Label = "UWA.AndroidClient", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Home")]
     public class HomeActivity : Activity
     {
-        private MapLocationRepository _repository;
-        private IList<MapLocation> _mapLocations;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -34,19 +32,15 @@ namespace UWA.AndroidClient
             // Get our button from the layout resource,
             // and attach an event to it
             var button = FindViewById<Button>(Resource.Id.MapsButton);
+            
 
             button.Click += MapsClicked;
         }
 
         private void MapsClicked(object sender, EventArgs e)
         {
-            //var intent = new Intent(this, typeof(MapsActivity));
-            //StartActivity(intent);
-            _repository = new MapLocationRepository();
-
-            _mapLocations = _repository.GetLocations();
-
-            Log.Info("Test1", "Locations fetched.");
+            var intent = new Intent(this, typeof(MapActivity));
+            StartActivity(intent);
         }
     }
 }

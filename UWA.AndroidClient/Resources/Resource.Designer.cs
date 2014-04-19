@@ -47,7 +47,16 @@ namespace UWA.AndroidClient
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_action_search = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int ic_action_view_as_list = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int uwa_splash = 2130837507;
 			
 			static Drawable()
 			{
@@ -62,8 +71,14 @@ namespace UWA.AndroidClient
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MapsButton = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int MapsButton = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int action_places = 2131165186;
+			
+			// aapt resource value: 0x7f070001
+			public const int action_search = 2131165185;
 			
 			static Id()
 			{
@@ -81,12 +96,31 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
 			
+			// aapt resource value: 0x7f030001
+			public const int Map = 2130903041;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int MapMenu = 2131099648;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -100,8 +134,17 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
 			
+			// aapt resource value: 0x7f040005
+			public const int action_listPlaces = 2130968581;
+			
+			// aapt resource value: 0x7f040004
+			public const int action_searchPlaces = 2130968580;
+			
+			// aapt resource value: 0x7f040003
+			public const int app_name = 2130968579;
+			
 			// aapt resource value: 0x7f040002
-			public const int MapsButtonText = 2130968578;
+			public const int maps_buttonText = 2130968578;
 			
 			static String()
 			{
@@ -109,6 +152,22 @@ namespace UWA.AndroidClient
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_SplashGreeting = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

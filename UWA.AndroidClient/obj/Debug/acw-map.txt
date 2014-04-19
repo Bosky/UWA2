@@ -1,1 +1,3 @@
 UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
+UWA.AndroidClient.MapActivity;uwa.androidclient.MapActivity
+UWA.AndroidClient.SplashActivity;uwa.androidclient.SplashActivity

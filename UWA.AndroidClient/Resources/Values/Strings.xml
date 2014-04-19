@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="MapsButtonText">Click me to fetch maps.</string>
-    <string name="ApplicationName">UWA.AndroidClient</string>
+    <string name="maps_buttonText">Click me to fetch maps.</string>
+    <string name="app_name">UWA.AndroidClient</string>
+    <string name="action_searchPlaces">Search</string>
+    <string name="action_listPlaces">Places</string>
+
 </resources>

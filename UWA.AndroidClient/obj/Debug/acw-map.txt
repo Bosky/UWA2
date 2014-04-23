@@ -1,1 +1,0 @@
-UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity

@@ -1,5 +1,0 @@
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Debug\UWA.Core.dll
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Debug\UWA.Core.pdb
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Debug\UWA.Core.dll
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Debug\UWA.Core.pdb
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Debug\UWA.Core.csprojResolveAssemblyReference.cache

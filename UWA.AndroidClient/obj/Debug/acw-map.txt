@@ -1,0 +1,3 @@
+UWA.Core.DataAccessLayer.UwaDatabaseHelper;uwa.core.dataaccesslayer.UwaDatabaseHelper
+UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
+UWA.AndroidClient.UwaApplication;uwa.androidclient.UwaApplication

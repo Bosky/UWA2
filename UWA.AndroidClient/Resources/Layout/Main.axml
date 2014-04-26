@@ -13,4 +13,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LocationsPlaceholder" />
+    <Button
+        android:id="@+id/PeopleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PeopleButtonText" />
 </LinearLayout>

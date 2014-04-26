@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="MapsButtonText">Click me to fetch maps.</string>
-    <string name="ApplicationName">UWA.AndroidClient</string>
-    <string name="LocationsPlaceholder">Wait for it...</string>
+  <string name="MapsButtonText">Click me to fetch maps.</string>
+  <string name="PeopleButtonText">I want to browse people.</string>
+  <string name="ApplicationName">UWA.AndroidClient</string>
+  <string name="LocationsPlaceholder">Wait for it...</string>
+  <string name="Hmm">What is going on.</string>
 </resources>

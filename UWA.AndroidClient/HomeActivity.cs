@@ -21,6 +21,7 @@ namespace UWA.AndroidClient
         private OrmMapLocationRepository _repository;
         private IList<MapLocation> _mapLocations;
 
+        private TextView _mapTextView;
         private TextView _locationTextView;
 
         protected override void OnCreate(Bundle bundle)
@@ -37,26 +38,32 @@ namespace UWA.AndroidClient
 
             // Get our button from the layout resource,
             // and attach an event to it
-            var button = FindViewById<Button>(Resource.Id.MapsButton);
+            var mButton = FindViewById<Button>(Resource.Id.MapsButton);
             _locationTextView = FindViewById<TextView>(Resource.Id.FetchedLocations);
 
-            button.Click += MapsClicked;
+            var pButton = FindViewById<Button>(Resource.Id.PeopleButton);
+
+            mButton.Click += MapsClicked;
+            pButton.Click += PeopleClicked;
+        }
+
+        private void PeopleClicked(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(PeopleActivity));
+            StartActivity(intent);
         }
 
         private void MapsClicked(object sender, EventArgs e)
         {
             //var intent = new Intent(this, typeof(MapsActivity));
             //StartActivity(intent);
-            
-
-            _repository = new OrmMapLocationRepository();
-
-            _mapLocations = _repository.GetLocations();
+                  
+            _mapLocations = UwaApplication.Repository.GetLocations();
 
             Log.Info("Test1", "Locations fetched.");
             try
             {
-                _locationTextView.Text = _mapLocations.FirstOrDefault().ID.ToString();
+                _locationTextView.Text = _mapLocations.Count.ToString();
             }
             catch (Exception)
             {

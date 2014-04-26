@@ -52,6 +52,9 @@
     <Compile Include="..\UWA.Core\BusinessLayer\Contracts\MapLocation.cs">
       <Link>BusinessLayer\Contracts\MapLocation.cs</Link>
     </Compile>
+    <Compile Include="..\UWA.Core\BusinessLayer\Contracts\Person.cs">
+      <Link>BusinessLayer\Contracts\Person.cs</Link>
+    </Compile>
     <Compile Include="..\UWA.Core\DataAccessLayer\OrmMapLocationRepository.cs">
       <Link>DataAccessLayer\OrmMapLocationRepository.cs</Link>
     </Compile>

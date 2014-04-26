@@ -16,6 +16,7 @@ namespace UWA.AndroidClient
     [Application]
     public class UwaApplication : Application
     {
+        public static OrmMapLocationRepository Repository;
     	 
     	public UwaApplication(IntPtr handle, JniHandleOwnership transfer)
     	: base(handle, transfer)
@@ -25,6 +26,7 @@ namespace UWA.AndroidClient
     	public override void OnCreate()
     	{
             CopyDatabase("UwaDatabase.db3");
+            Repository = new OrmMapLocationRepository();
     	    base.OnCreate();
     	}
 

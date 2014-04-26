@@ -65,8 +65,17 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f050001
 			public const int FetchedLocations = 2131034113;
 			
+			// aapt resource value: 0x7f050004
+			public const int LastName = 2131034116;
+			
 			// aapt resource value: 0x7f050000
 			public const int MapsButton = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int PeopleButton = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int PeopleListView = 2131034115;
 			
 			static Id()
 			{
@@ -83,6 +92,12 @@ namespace UWA.AndroidClient
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int People = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int PeopleListItem = 2130903042;
 			
 			static Layout()
 			{
@@ -103,11 +118,17 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
 			
-			// aapt resource value: 0x7f040003
-			public const int LocationsPlaceholder = 2130968579;
+			// aapt resource value: 0x7f040005
+			public const int Hmm = 2130968581;
+			
+			// aapt resource value: 0x7f040004
+			public const int LocationsPlaceholder = 2130968580;
 			
 			// aapt resource value: 0x7f040002
 			public const int MapsButtonText = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int PeopleButtonText = 2130968579;
 			
 			static String()
 			{

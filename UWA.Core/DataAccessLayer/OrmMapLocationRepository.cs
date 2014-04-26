@@ -7,6 +7,7 @@ namespace UWA.Core.DataAccessLayer
     public interface IMapLocationRepository
     {
         IList<MapLocation> GetLocations();
+        IList<Person> GetPeople();
     }
 
     public class OrmMapLocationRepository : IMapLocationRepository
@@ -14,6 +15,11 @@ namespace UWA.Core.DataAccessLayer
         public IList<MapLocation> GetLocations()
         {
             return DataLayer.UwaDatabase.GetItems<MapLocation>().ToList();
+        }
+
+        public IList<Person> GetPeople()
+        {
+            return DataLayer.UwaDatabase.GetItems<Person>().ToList();
         }
     }
 }

@@ -8,9 +8,17 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/MapsButtonText" />
+<<<<<<< HEAD
     <TextView
         android:id="@+id/FetchedLocations"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/LocationsPlaceholder" />
+=======
+    <Button
+        android:id="@+id/NewsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NewsButtonText" />
+>>>>>>> ade848380dca3ecbcf92b69fdd6739b315a77d53
 </LinearLayout>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.ComponentModel;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -40,7 +41,18 @@ namespace UWA.AndroidClient
             var button = FindViewById<Button>(Resource.Id.MapsButton);
             _locationTextView = FindViewById<TextView>(Resource.Id.FetchedLocations);
 
-            button.Click += MapsClicked;
+            var mapsbutton = FindViewById<Button>(Resource.Id.MapsButton);
+            var newsbutton = FindViewById<Button>(Resource.Id.NewsButton);
+
+
+            mapsbutton.Click += MapsClicked;
+            newsbutton.Click += NewsClicked;
+        }
+
+        private void NewsClicked(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(NewsActivity));
+            StartActivity(intent);
         }
 
         private void MapsClicked(object sender, EventArgs e)

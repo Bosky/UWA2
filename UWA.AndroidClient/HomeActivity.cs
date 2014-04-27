@@ -51,7 +51,7 @@ namespace UWA.AndroidClient
 
         private void NewsClicked(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(NewsActivity));
+            var intent = new Intent(this, typeof(EventActivity));
             StartActivity(intent);
         }
 

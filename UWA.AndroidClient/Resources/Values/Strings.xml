@@ -2,10 +2,7 @@
 <resources>
     <string name="MapsButtonText">Click me to fetch maps.</string>
     <string name="ApplicationName">UWA.AndroidClient</string>
-
     <string name="LocationsPlaceholder">Wait for it...</string>
     <string name="NewsButtonText">News please!</string>
-
     <string name="Hmm">Unsure</string>
-
 </resources>

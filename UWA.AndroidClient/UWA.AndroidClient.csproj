@@ -55,10 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\NewsListAdapter.cs" />
-    <Compile Include="Adapters\PeopleListAdapter.cs" />
-    <Compile Include="DAL\UwaDatabaseHelper.cs" />
+    <Compile Include="Adapters\EventListAdapter.cs" />
     <Compile Include="HomeActivity.cs" />
-    <Compile Include="NewsActivity.cs" />
+    <Compile Include="EventActivity.cs" />
     <Compile Include="PeopleActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,16 +68,14 @@
     <AndroidAsset Include="Assets\people" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\Layout\PeopleListView.axml" />
-    <AndroidResource Include="Resources\Layout\NewsListItem.axml" />
-    <AndroidResource Include="Resources\Layout\PeopleListItem.axml" />
-    <AndroidResource Include="Resources\Layout\People.axml" />
-    <AndroidResource Include="Resources\Layout\News.axml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Events.axml" />
+    <AndroidResource Include="Resources\Layout\EventsListItem.axml" />
     <AndroidResource Include="Resources\Layout\Main.axml" />
-  </ItemGroup>
-  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\People.axml" />
+    <AndroidResource Include="Resources\Layout\PeopleListItem.axml" />
+    <AndroidResource Include="Resources\Layout\PeopleListView.axml" />
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>

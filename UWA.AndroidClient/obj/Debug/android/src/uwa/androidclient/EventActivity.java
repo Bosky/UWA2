@@ -1,7 +1,7 @@
 package uwa.androidclient;
 
 
-public class NewsActivity
+public class EventActivity
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -11,15 +11,15 @@ public class NewsActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("UWA.AndroidClient.NewsActivity, UWA.AndroidClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", NewsActivity.class, __md_methods);
+		mono.android.Runtime.register ("UWA.AndroidClient.EventActivity, UWA.AndroidClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", EventActivity.class, __md_methods);
 	}
 
 
-	public NewsActivity () throws java.lang.Throwable
+	public EventActivity () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == NewsActivity.class)
-			mono.android.TypeManager.Activate ("UWA.AndroidClient.NewsActivity, UWA.AndroidClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == EventActivity.class)
+			mono.android.TypeManager.Activate ("UWA.AndroidClient.EventActivity, UWA.AndroidClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

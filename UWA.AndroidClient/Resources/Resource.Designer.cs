@@ -65,17 +65,17 @@ namespace UWA.AndroidClient
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int FetchedLocations = 2131034113;
+			// aapt resource value: 0x7f050006
+			public const int FetchedLocations = 2131034118;
 			
 			// aapt resource value: 0x7f050009
 			public const int LastName = 2131034121;
 			
-			// aapt resource value: 0x7f050000
-			public const int MapsButton = 2131034112;
+			// aapt resource value: 0x7f050005
+			public const int MapsButton = 2131034117;
 			
-			// aapt resource value: 0x7f050002
-			public const int NewsButton = 2131034114;
+			// aapt resource value: 0x7f050007
+			public const int NewsButton = 2131034119;
 			
 			// aapt resource value: 0x7f05000a
 			public const int PeopleListItem = 2131034122;
@@ -83,20 +83,20 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f050008
 			public const int PeopleListView = 2131034120;
 			
-			// aapt resource value: 0x7f050007
-			public const int btnImgForward = 2131034119;
-			
 			// aapt resource value: 0x7f050004
-			public const int newsIcon = 2131034116;
+			public const int btnImgForward = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int description = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int eventIcon = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int eventListView = 2131034112;
 			
 			// aapt resource value: 0x7f050003
-			public const int newsItemsListView = 2131034115;
-			
-			// aapt resource value: 0x7f050006
-			public const int pubDate = 2131034118;
-			
-			// aapt resource value: 0x7f050005
-			public const int title = 2131034117;
+			public const int pubDate = 2131034115;
 			
 			static Id()
 			{
@@ -112,13 +112,13 @@ namespace UWA.AndroidClient
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Events = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int News = 2130903041;
+			public const int EventsListItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int NewsListItem = 2130903042;
+			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
 			public const int People = 2130903043;

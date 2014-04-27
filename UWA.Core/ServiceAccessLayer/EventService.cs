@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using System.Diagnostics;
 using RestSharp;
+using UWA.Core.BusinessLayer.Contracts;
 
 namespace UWA.Core.ServiceAccessLayer
 {
@@ -21,7 +22,7 @@ namespace UWA.Core.ServiceAccessLayer
         //    };
         //}
 
-        public static EventFeed GetFeed()
+        public static List<RSSEvent> GetFeed()
         {
             _client = new RestClient {BaseUrl = FeedUrl};
 
@@ -37,7 +38,12 @@ namespace UWA.Core.ServiceAccessLayer
 
             var response2 = _client.Execute<EventFeed>(request);
             Debug.Write(response2.Data.channel.item.Count.ToString());
-            return response2.Data;
+
+            var eventList = new List<RSSEvent>();
+            foreach (var item in response2.Data.channel.item)
+                eventList.Add(new RSSEvent(item));
+
+            return eventList;
         }
     }
 }

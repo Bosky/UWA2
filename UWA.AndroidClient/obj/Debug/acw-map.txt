@@ -1,8 +1,7 @@
 UWA.Core.DataAccessLayer.UwaDatabaseHelper;uwa.core.dataaccesslayer.UwaDatabaseHelper
 UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
-<<<<<<< HEAD
-UWA.AndroidClient.UwaApplication;uwa.androidclient.UwaApplication
-=======
 UWA.AndroidClient.Adapters.NewsListAdapter;uwa.androidclient.adapters.NewsListAdapter
+UWA.AndroidClient.PeopleActivity;uwa.androidclient.PeopleActivity
+UWA.AndroidClient.Adapters.PeopleListAdapter;uwa.androidclient.adapters.PeopleListAdapter
+UWA.AndroidClient.UwaApplication;uwa.androidclient.UwaApplication
 UWA.AndroidClient.NewsActivity;uwa.androidclient.NewsActivity
->>>>>>> ade848380dca3ecbcf92b69fdd6739b315a77d53

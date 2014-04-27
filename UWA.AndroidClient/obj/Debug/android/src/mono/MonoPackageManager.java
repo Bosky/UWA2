@@ -68,6 +68,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"UWA.AndroidClient.dll",
 		"UWA.Core.MonoAndroid.dll",
+		"RestSharp.MonoDroid.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -21,7 +21,7 @@ namespace UWA.AndroidClient
 
             _peopleList = FindViewById<ListView>(Resource.Id.PeopleListView);
 
-            _people = UwaApplication.Repository.GetPeople();
+            //_people = UwaApplication.Repository.GetPeople();
 
             //_people = new List<People> { new People { ID = 1, LastName = "Voihan nena" } };
 

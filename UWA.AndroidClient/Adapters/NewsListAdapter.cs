@@ -10,19 +10,19 @@ using UWA.Core.ServiceAccessLayer;
 namespace UWA.AndroidClient.Adapters
 {
 // ReSharper disable once InconsistentNaming
-    public class NewsListAdapter : BaseAdapter<RSSEntry>
+    public class NewsListAdapter : BaseAdapter<NewsEntry>
     {
         protected Activity context = null;
-        protected List<RSSEntry> feedsList = new List<RSSEntry>();
+        protected List<NewsEntry> feedsList = new List<NewsEntry>();
 
-        public NewsListAdapter(Activity context, List<RSSEntry> feedsList)
+        public NewsListAdapter(Activity context, List<NewsEntry> feedsList)
             : base()
         {
             this.context = context;
             this.feedsList = feedsList;
         }
 
-        public override RSSEntry this[int position]
+        public override NewsEntry this[int position]
         {
             get { return this.feedsList[position]; }
         }
@@ -39,12 +39,12 @@ namespace UWA.AndroidClient.Adapters
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var RSSEntry = this.feedsList[position];
+            var NewsEntry = this.feedsList[position];
 
             var view = (convertView ?? context.LayoutInflater.Inflate(Resource.Layout.NewsListItem, parent, false)) as LinearLayout;
 
-            view.FindViewById<TextView>(Resource.Id.title).Text = RSSEntry.Title.Length < 51 ? RSSEntry.Title : RSSEntry.Title.Substring(0, 50) + "...";
-            view.FindViewById<TextView>(Resource.Id.pubDate).Text = RSSEntry.Published.ToString("dd/MM/yyyy HH:mm");
+            view.FindViewById<TextView>(Resource.Id.title).Text = NewsEntry.Title.Length < 51 ? NewsEntry.Title : NewsEntry.Title.Substring(0, 50) + "...";
+            view.FindViewById<TextView>(Resource.Id.pubDate).Text = NewsEntry.Published.ToString("dd/MM/yyyy HH:mm");
             return view;
         }
     }

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\..\..\..\..\Downloads\restsharp-104.1.0\restsharp-104.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -44,10 +47,15 @@
     <Compile Include="BusinessLayer\Contracts\BusinessEntityBase.cs" />
     <Compile Include="BusinessLayer\Contracts\IBusinessEntity.cs" />
     <Compile Include="BusinessLayer\Contracts\MapLocation.cs" />
+    <Compile Include="BusinessLayer\Contracts\Person.cs" />
     <Compile Include="DataAccessLayer\OrmMapLocationRepository.cs" />
     <Compile Include="DataAccessLayer\SQLite.cs" />
     <Compile Include="DataLayer\UwaDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceAccessLayer\EventService.cs" />
+    <Compile Include="ServiceAccessLayer\NewsEntry.cs" />
+    <Compile Include="ServiceAccessLayer\NewsService.cs" />
+    <Compile Include="ServiceAccessLayer\RSSModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessLayer\Managers\" />

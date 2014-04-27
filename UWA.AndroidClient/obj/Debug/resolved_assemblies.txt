@@ -1,2 +1,3 @@
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.AndroidClient.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\UWA.Core.MonoAndroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll

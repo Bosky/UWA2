@@ -54,8 +54,6 @@
     <Compile Include="DataLayer\UwaDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceAccessLayer\EventService.cs" />
-    <Compile Include="ServiceAccessLayer\NewsEntry.cs" />
-    <Compile Include="ServiceAccessLayer\NewsService.cs" />
     <Compile Include="ServiceAccessLayer\RSSModel.cs" />
   </ItemGroup>
   <ItemGroup>

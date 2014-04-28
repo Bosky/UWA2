@@ -14,6 +14,9 @@ namespace UWA.Core.BusinessLayer.Contracts
     /// </summary>
     public enum Category { ARTICLE, ANNOUNCEMENT, WARNING, }
 
+    /// <summary>
+    /// Business model presentation of DTO data deserealised by the Eventservice.
+    /// </summary>
     public class RSSEvent : IBusinessEntity
     {
         [PrimaryKey, AutoIncrement]

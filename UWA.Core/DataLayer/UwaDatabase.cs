@@ -30,8 +30,6 @@ namespace UWA.Core.DataLayer
             : base(path)
         {
             // create the tables
-            //CreateTable<Exhibitor>();
-            //CreateTable<Session>();
             //CreateTable<Speaker>();
             //CreateTable<Favorite>();
             // FK
@@ -112,6 +110,26 @@ namespace UWA.Core.DataLayer
                 Me.Commit();
             }
         }
+
+        /// <summary>
+        /// Gets Maplocations by Criteria
+        /// </summary>
+        public static IList<MapLocation> GetMapLocationsByCriteria(string criteria)
+        {
+            lock (Locker)
+            {
+                List<MapLocation> mapLocations = (from m in Me.Table<MapLocation>()
+                    where m.Name == criteria
+                    select m).ToList();
+
+                return mapLocations;
+            }
+        }
+
+
+
+
+
 
         // HACK: fixes UNHANDLED EXCEPTION: System.NotSupportedException: Cannot store type: MWC.BL.Favorite
         //public static int DeleteFavorite(int id)
@@ -199,31 +217,7 @@ namespace UWA.Core.DataLayer
         //        return session;
         //    }
         //}
-        ///// <summary>
-        ///// Gets the Session AND linked Speakers
-        ///// </summary>
-        //public static Session GetSessionWithKey(string key)
-        //{
-        //    lock (locker)
-        //    {
-        //        Session session = (from s in me.Table<Session>()
-        //                           where s.Key == key
-        //                           select s).FirstOrDefault();
 
-        //        session.SpeakerKeys = (from ss in me.Table<SessionSpeaker>()
-        //                               where ss.SessionKey == session.Key
-        //                               select ss.SpeakerKey).ToList();
-        //        var speakers = GetItems<Speaker>();
-
-        //        var speakersInSession = (from sp in speakers
-        //                                 where session.SpeakerKeys.Contains(sp.Key)
-        //                                 select sp).ToList();
-
-        //        session.Speakers = speakersInSession;
-
-        //        return session;
-        //    }
-        //}
         ///// <summary>
         ///// Gets the Speaker AND linked Sessions
         ///// </summary>

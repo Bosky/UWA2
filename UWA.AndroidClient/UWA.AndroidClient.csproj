@@ -55,26 +55,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\PeopleListAdapter.cs" />
-    <Compile Include="DAL\UwaDatabaseHelper.cs" />
     <Compile Include="HomeActivity.cs" />
+    <Compile Include="MapActivity.cs" />
+    <Compile Include="MapSearchActivity.cs" />
     <Compile Include="PeopleActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UwaApplication.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\UwaDatabase.db3" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout\Home.axml" />
     <AndroidResource Include="Resources\Layout\People.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\PeopleListItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Layout\Main.axml" />
+    <AndroidResource Include="Resources\Layout\Map.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
@@ -86,12 +87,22 @@
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
+    <AndroidResource Include="Resources\Drawable\ico_forward.png" />
+    <AndroidResource Include="Resources\Xml\searchable.xml" />
+    <AndroidResource Include="Resources\Menu\MapMenu.xml" />
+    <AndroidResource Include="Resources\Drawable\ic_action_search.png" />
+    <AndroidResource Include="Resources\Drawable\ic_action_view_as_list.png" />
+    <AndroidResource Include="Resources\Drawable\uwa_logo_240.jpg" />
+    <AndroidResource Include="Resources\Drawable\uwa_logo_480.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UWA.Core.MonoAndroid\UWA.Core.MonoAndroid.csproj">
       <Project>{E4917578-7E89-41E4-9694-5442B485EAE0}</Project>
       <Name>UWA.Core.MonoAndroid</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UwaDatabase.db3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

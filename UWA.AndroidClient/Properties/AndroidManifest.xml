@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
-	<application></application>
+	<application>
+    <!-- Points to searchable activity so the whole app can invoke search. -->
+    <meta-data android:name="android.app.default_searchable" android:value="uwa.androidclient.MapSearchActivity" />
+  </application>
 </manifest>

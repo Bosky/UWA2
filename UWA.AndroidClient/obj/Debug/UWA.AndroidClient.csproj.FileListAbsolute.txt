@@ -10,10 +10,16 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.pdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\android\bin\UWA.AndroidClient.apk
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\home.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\people.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\peoplelistitem.xml
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\main.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\map.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\icon.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ico_forward.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\xml\searchable.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\menu\mapmenu.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_search.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_view_as_list.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\uploadflags.txt

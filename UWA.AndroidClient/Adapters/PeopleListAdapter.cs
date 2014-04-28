@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Mime;
 using Android.App;
 using Android.Provider;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using UWA.Core.BusinessLayer.Contracts;
@@ -10,38 +12,45 @@ namespace UWA.AndroidClient.Adapters
 {
     class PeopleListAdapter : BaseAdapter<Person>
     {
-        private readonly Activity _context;
-        private readonly IList<Person> _people;
+        protected Activity context;
+        protected IList<Person> personList = new List<Person>(); 
 
         public PeopleListAdapter(Activity context, IList<Person> people)
+            : base()
         {
-            _context = context;
-            _people = people;
+            this.context = context;
+            this.personList = people;
         }
 
         public override long GetItemId(int position)
         {
-            return _people[position].ID;
+            return personList[position].ID;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var view = convertView
-                ?? _context.LayoutInflater.Inflate(Resource.Layout.PeopleListItem, null);
+            
 
-            view.FindViewById<TextView>(Resource.Id.LastName).Text = _people[position].ID.ToString();
+            var person = this.personList[position];
 
+            Log.Info("PeopleListAdapter", person.FirstName.ToString());
+
+            var view = (convertView ?? context.LayoutInflater.Inflate(Resource.Layout.PeopleListItem, parent, false)) as LinearLayout;
+
+            view.FindViewById<TextView>(Resource.Id.name).Text = String.Format(person.FirstName + " " + person.LastName);
+
+            view.FindViewById<TextView>(Resource.Id.office).Text = person.Office;
             return view;
         }
 
         public override Person this[int position]
         {
-            get { return _people[position]; }
+            get { return this.personList[position]; }
         }
 
         public override int Count
         {
-            get { return _people.Count; }
+            get { return this.personList.Count; }
         }
     }
 }

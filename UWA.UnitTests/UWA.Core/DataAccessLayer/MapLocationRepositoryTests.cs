@@ -11,14 +11,14 @@ namespace UWA.UnitTests.UWA.Core.DataAccessLayer
 {
     public class when_working_with_the_map_location_repository : Specification
     {
-        protected OrmMapLocationRepository _locationRepository;
+        protected ORMRepository _locationRepository;
         protected IList<MapLocation> _expected;
 
         protected override void Establish_context()
         {
             base.Establish_context();
 
-            _locationRepository = new OrmMapLocationRepository();
+            _locationRepository = new ORMRepository();
 
             _expected = new List<MapLocation>
             {

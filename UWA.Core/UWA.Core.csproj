@@ -43,19 +43,15 @@
   <ItemGroup>
     <Compile Include="BusinessLayer\Contracts\BusinessEntityBase.cs" />
     <Compile Include="BusinessLayer\Contracts\IBusinessEntity.cs" />
-    <Compile Include="BusinessLayer\Contracts\MapLocation.cs" />
-    <Compile Include="BusinessLayer\Contracts\Person.cs" />
+    <Compile Include="BusinessLayer\MapLocation.cs" />
+    <Compile Include="BusinessLayer\Person.cs" />
+    <Compile Include="BusinessLayer\Managers\MapLocationManager.cs" />
     <Compile Include="DataAccessLayer\OrmMapLocationRepository.cs" />
-    <Compile Include="DataAccessLayer\SQLite.cs" />
+    <Compile Include="DataLayer\SQLite.cs" />
     <Compile Include="DataLayer\UwaDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BusinessLayer\Managers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UwaDatabase.db3" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>

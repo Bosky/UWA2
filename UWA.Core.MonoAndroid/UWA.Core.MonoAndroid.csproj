@@ -49,17 +49,20 @@
     <Compile Include="..\UWA.Core\BusinessLayer\Contracts\IBusinessEntity.cs">
       <Link>BusinessLayer\Contracts\IBusinessEntity.cs</Link>
     </Compile>
-    <Compile Include="..\UWA.Core\BusinessLayer\Contracts\MapLocation.cs">
-      <Link>BusinessLayer\Contracts\MapLocation.cs</Link>
+    <Compile Include="..\UWA.Core\BusinessLayer\Managers\MapLocationManager.cs">
+      <Link>BusinessLayer\Managers\MapLocationManager.cs</Link>
     </Compile>
-    <Compile Include="..\UWA.Core\BusinessLayer\Contracts\Person.cs">
-      <Link>BusinessLayer\Contracts\Person.cs</Link>
+    <Compile Include="..\UWA.Core\BusinessLayer\MapLocation.cs">
+      <Link>BusinessLayer\MapLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\UWA.Core\BusinessLayer\Person.cs">
+      <Link>BusinessLayer\Person.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\DataAccessLayer\OrmMapLocationRepository.cs">
       <Link>DataAccessLayer\OrmMapLocationRepository.cs</Link>
     </Compile>
-    <Compile Include="..\UWA.Core\DataAccessLayer\SQLite.cs">
-      <Link>DataAccessLayer\SQLite.cs</Link>
+    <Compile Include="..\UWA.Core\DataLayer\SQLite.cs">
+      <Link>DataLayer\SQLite.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\DataLayer\UwaDatabase.cs">
       <Link>DataLayer\UwaDatabase.cs</Link>
@@ -68,17 +71,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\UWA.Core\UwaDatabase.db3">
-      <Link>UwaDatabase.db3</Link>
-    </EmbeddedResource>
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BusinessLayer\Managers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

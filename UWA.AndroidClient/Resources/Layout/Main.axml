@@ -4,18 +4,17 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <Button
-        android:id="@+id/MapsButton"
+        android:id="@+id/mapButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/MapsButtonText" />
+        android:text="@string/mapButtonText" />
     <TextView
-        android:id="@+id/FetchedLocations"
+        android:id="@+id/fetchedLocations"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/LocationsPlaceholder" />
+        android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/PeopleButton"
+        android:id="@+id/peopleButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/PeopleButtonText" />
+        android:text="@string/peopleButtonText" />
 </LinearLayout>

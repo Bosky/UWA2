@@ -58,13 +58,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\PeopleListAdapter.cs" />
-    <Compile Include="HomeActivity.cs" />
-    <Compile Include="MapActivity.cs" />
-    <Compile Include="MapSearchActivity.cs" />
-    <Compile Include="PeopleActivity.cs" />
+    <Compile Include="HomeActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapSearchActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeopleActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UwaApplication.cs" />
+    <Compile Include="UwaApplication.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

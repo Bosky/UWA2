@@ -32,13 +32,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\Contracts\BusinessEntityBase.cs" />
@@ -46,7 +42,7 @@
     <Compile Include="BusinessLayer\MapLocation.cs" />
     <Compile Include="BusinessLayer\Person.cs" />
     <Compile Include="BusinessLayer\Managers\MapLocationManager.cs" />
-    <Compile Include="DataAccessLayer\OrmMapLocationRepository.cs" />
+    <Compile Include="DataAccessLayer\DataManager.cs" />
     <Compile Include="DataLayer\SQLite.cs" />
     <Compile Include="DataLayer\UwaDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

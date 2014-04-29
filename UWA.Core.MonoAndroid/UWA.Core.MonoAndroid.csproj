@@ -58,15 +58,13 @@
     <Compile Include="..\UWA.Core\BusinessLayer\Person.cs">
       <Link>BusinessLayer\Person.cs</Link>
     </Compile>
-    <Compile Include="..\UWA.Core\DataAccessLayer\OrmMapLocationRepository.cs">
-      <Link>DataAccessLayer\OrmMapLocationRepository.cs</Link>
-    </Compile>
     <Compile Include="..\UWA.Core\DataLayer\SQLite.cs">
       <Link>DataLayer\SQLite.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\DataLayer\UwaDatabase.cs">
       <Link>DataLayer\UwaDatabase.cs</Link>
     </Compile>
+    <Compile Include="DataAccessLayer\DataManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

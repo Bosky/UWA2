@@ -8,7 +8,7 @@ using UWA.Core.BusinessLayer.Contracts;
 namespace UWA.Core.DataLayer
 {
     /// <summary>
-    /// TaskDatabase builds on SQLite.Net and represents a specific database, in our case, the MWC DB.
+    /// UwaDatabase builds on SQLite.Net and represents a specific database, in our case, the UwaDatabase.db3
     /// It contains methods for retreival and persistance as well as db creation, all based on the 
     /// underlying ORM.
     /// </summary>
@@ -26,25 +26,14 @@ namespace UWA.Core.DataLayer
         /// <param name='path'>
         /// Path.
         /// </param>
-        protected UwaDatabase(string path)
-            : base(path)
-        {
-            // create the tables
-            //CreateTable<Speaker>();
-            //CreateTable<Favorite>();
-            // FK
-            //CreateTable<SessionSpeaker>();
-            // these are really for caches
-            //CreateTable<Tweet>();
-            //CreateTable<RSSEntry>();
-        }
+        protected UwaDatabase(string path): base(path) { }
 
         static UwaDatabase()
         {
             // set the db location
             DbLocation = DatabaseFilePath;
 
-            // instantiate a new db
+            // instantiate a new DB abstration
             Me = new UwaDatabase(DbLocation);
         }
 
@@ -52,7 +41,12 @@ namespace UWA.Core.DataLayer
         {
             get
             {
-                return Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "UwaDatabase.db3");
+                var libraryPath = (string)null;
+                #if __ANDROID__
+                    libraryPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+                #endif
+                var path = Path.Combine(libraryPath, "UwaDatabase.db3");
+                return path;
             }
         }
 
@@ -68,14 +62,6 @@ namespace UWA.Core.DataLayer
         {
             lock (Locker)
             {
-
-                // ---
-                //return (from i in me.Table<T> ()
-                //        where i.ID == id
-                //        select i).FirstOrDefault ();
-
-                // +++ To properly use Generic version and eliminate NotSupportedException
-                // ("Cannot compile: " + expr.NodeType.ToString ()); in SQLite.cs
                 return Me.Table<T>().FirstOrDefault(x => x.ID == id);
             }
         }
@@ -112,6 +98,21 @@ namespace UWA.Core.DataLayer
         }
 
         /// <summary>
+        /// Gets Maplocations by MapLocatioCategory
+        /// </summary>
+        public static IList<MapLocation> GetMapLocationsByCategory(string category)
+        {
+            lock (Locker)
+            {
+                List<MapLocation> mapLocations = (from m in Me.Table<MapLocation>()
+                                                  where m.Name == category
+                                                  select m).ToList();
+
+                return mapLocations;
+            }
+        }
+
+        /// <summary>
         /// Gets Maplocations by Criteria
         /// </summary>
         public static IList<MapLocation> GetMapLocationsByCriteria(string criteria)
@@ -125,190 +126,5 @@ namespace UWA.Core.DataLayer
                 return mapLocations;
             }
         }
-
-
-
-
-
-
-        // HACK: fixes UNHANDLED EXCEPTION: System.NotSupportedException: Cannot store type: MWC.BL.Favorite
-        //public static int DeleteFavorite(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        return me.Delete(new Favorite() { ID = id });
-        //    }
-        //}
-
-        //public static int DeleteItem<T>(int id) where T : BL.Contracts.IBusinessEntity, new()
-        //{
-        //    lock (locker)
-        //    {
-        //        return me.Delete<T>(new T() { ID = id });
-        //    }
-        //}
-
-        //public static void ClearTable<T>() where T : BL.Contracts.IBusinessEntity, new()
-        //{
-        //    lock (locker)
-        //    {
-        //        me.Execute(string.Format("delete from \"{0}\"", typeof(T).Name));
-        //    }
-        //}
-
-        //// helper for checking if database has been populated
-        //public static int CountTable<T>() where T : BL.Contracts.IBusinessEntity, new()
-        //{
-        //    lock (locker)
-        //    {
-        //        string sql = string.Format("select count (*) from \"{0}\"", typeof(T).Name);
-        //        var c = me.CreateCommand(sql, new object[0]);
-        //        return c.ExecuteScalar<int>();
-        //    }
-        //}
-
-        ////		public static IEnumerable<T> Query<T>(string query)
-        ////		{
-        ////			return _me.Query.
-        ////		}
-
-        //public static IEnumerable<Session> GetSessionsByStartDate(DateTime dateMin, DateTime dateMax)
-        //{
-        //    lock (locker)
-        //    {
-        //        return (from i in me.Table<Session>()
-        //                where i.Start >= dateMin && i.Start <= dateMax
-        //                select i).ToList();
-        //    }
-        //}
-
-
-        ///*
-        // * the following two queries are currently required because the Generic versions throw
-        // * an exception on this line in SQLite.cs (Android ONLY)
-        // * 1565:  throw new NotSupportedException ("Cannot compile: " + expr.NodeType.ToString ());
-        // *
-        // * ALSO now I've added some additional processing to the Session and Speaker to 'join' them
-        // */
-        ///// <summary>
-        ///// Gets the Session AND linked Speakers
-        ///// </summary>
-        //public static Session GetSession(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        Session session = (from s in me.Table<Session>()
-        //                           where s.ID == id
-        //                           select s).FirstOrDefault();
-        //        try
-        //        { // bug occurs in simulator...???
-        //            session.SpeakerKeys = (from ss in me.Table<SessionSpeaker>()
-        //                                   where ss.SessionKey == session.Key
-        //                                   select ss.SpeakerKey).ToList();
-        //            var speakers = GetItems<Speaker>();
-
-        //            var speakerInSession = (from sp in speakers
-        //                                    where session.SpeakerKeys.Contains(sp.Key)
-        //                                    select sp).ToList();
-
-        //            session.Speakers = speakerInSession;
-        //        }
-        //        catch { }
-        //        return session;
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Gets the Speaker AND linked Sessions
-        ///// </summary>
-        //public static Speaker GetSpeaker(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        Speaker speaker = (from s in me.Table<Speaker>()
-        //                           where s.ID == id
-        //                           select s).FirstOrDefault();
-
-        //        var keys = (from ss in me.Table<SessionSpeaker>()
-        //                    where ss.SpeakerKey == speaker.Key
-        //                    select ss).ToList();
-        //        // HACK: gets around "Default constructor not found for type System.String" error
-        //        speaker.SessionKeys = keys.Select(x => x.SpeakerKey).ToList();
-
-        //        var sessions = GetItems<Session>();
-
-        //        var sessionsForSpeaker = (from se in sessions
-        //                                  where speaker.SessionKeys.Contains(se.Key)
-        //                                  select se).ToList();
-
-        //        speaker.Sessions = sessionsForSpeaker;
-
-        //        return speaker;
-        //    }
-        //}
-        ///// <summary>
-        ///// Gets the Speaker AND linked Sessions
-        ///// </summary>
-        //public static Speaker GetSpeakerWithKey(string key)
-        //{
-        //    lock (locker)
-        //    {
-        //        Speaker speaker = (from s in me.Table<Speaker>()
-        //                           where s.Key == key
-        //                           select s).FirstOrDefault();
-
-        //        speaker.SessionKeys = (from ss in me.Table<SessionSpeaker>()
-        //                               where ss.SpeakerKey == speaker.Key
-        //                               select ss.SessionKey).ToList();
-        //        var sessions = GetItems<Session>();
-
-        //        var sessionsForSpeaker = (from se in sessions
-        //                                  where speaker.SessionKeys.Contains(se.Key)
-        //                                  select se).ToList();
-
-        //        speaker.Sessions = sessionsForSpeaker;
-
-        //        return speaker;
-        //    }
-        //}
-        //public static Exhibitor GetExhibitor(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        //return DL.MwcDatabase.GetItem<Exhibitor> (id);
-        //        return (from s in me.Table<Exhibitor>()
-        //                where s.ID == id
-        //                select s).FirstOrDefault();
-        //    }
-        //}
-        //public static Exhibitor GetExhibitorWithName(string name)
-        //{
-        //    lock (locker)
-        //    {
-        //        return (from s in me.Table<Exhibitor>()
-        //                where s.Name == name
-        //                select s).FirstOrDefault();
-        //    }
-        //}
-        //public static Tweet GetTweet(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        //return DL.MwcDatabase.GetItem<Tweet> (id);
-        //        return (from s in me.Table<Tweet>()
-        //                where s.ID == id
-        //                select s).FirstOrDefault();
-        //    }
-        //}
-        //public static RSSEntry GetNews(int id)
-        //{
-        //    lock (locker)
-        //    {
-        //        //return DL.MwcDatabase.GetItem<RSSEntry> (id);
-        //        return (from s in me.Table<RSSEntry>()
-        //                where s.ID == id
-        //                select s).FirstOrDefault();
-        //    }
-        //}
     }
 }

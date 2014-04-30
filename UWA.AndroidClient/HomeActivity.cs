@@ -25,11 +25,12 @@ namespace UWA.AndroidClient
             SetContentView(Resource.Layout.Home);
 
             var mButton = FindViewById<Button>(Resource.Id.mapButton);
-           
             var pButton = FindViewById<Button>(Resource.Id.peopleButton);
+            var eButton = FindViewById<Button>(Resource.Id.eventsButton);
 
             mButton.Click += MapsClicked;
             pButton.Click += PeopleClicked;
+            eButton.Click += NewsClicked;
         }
 
         private void PeopleClicked(object sender, EventArgs e)
@@ -41,21 +42,13 @@ namespace UWA.AndroidClient
         private void MapsClicked(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MapActivity));
-            StartActivity(intent);
-                  
-            //_mapLocations = UwaApplication.Repository.GetLocations();
+            StartActivity(intent);            
+        }
 
-            //Log.Info("Test1", "Locations fetched.");
-            //try
-            //{
-            //    _locationTextView.Text = _mapLocations.FirstOrDefault().Latitude.ToString();
-            //}
-            //catch (Exception)
-            //{
-            //    Log.Info("Test1", "No Locations in _mapLocations");
-            //}
-      
-            
+        private void NewsClicked(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(EventActivity));
+            StartActivity(intent);
         }
     }
 }

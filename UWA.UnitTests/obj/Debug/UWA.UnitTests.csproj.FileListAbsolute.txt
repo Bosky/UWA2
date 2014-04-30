@@ -12,3 +12,4 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.UnitTests\bin\Debug\n
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.UnitTests\obj\Debug\UWA.UnitTests.csprojResolveAssemblyReference.cache
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.UnitTests\obj\Debug\UWA.UnitTests.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.UnitTests\obj\Debug\UWA.UnitTests.pdb
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.UnitTests\bin\Debug\RestSharp.MonoDroid.dll

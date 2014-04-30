@@ -57,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\EventListAdapter.cs" />
     <Compile Include="Adapters\PeopleListAdapter.cs" />
+    <Compile Include="EventActivity.cs" />
     <Compile Include="HomeActivity.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -89,6 +91,8 @@
     <AndroidResource Include="Resources\Layout\Map.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\Layout\Events.axml" />
+    <AndroidResource Include="Resources\Layout\EventsListItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />

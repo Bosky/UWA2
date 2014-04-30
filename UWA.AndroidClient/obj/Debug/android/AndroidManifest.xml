@@ -11,6 +11,7 @@
       </intent-filter>
     </activity>
     <activity android:label="People" android:name="uwa.androidclient.PeopleActivity" />
+    <activity android:label="My Activity" android:name="uwa.androidclient.EventActivity" />
     <activity android:label="Campus Map" android:name="uwa.androidclient.MapActivity">
       <meta-data android:name="android.app.default_searchable" android:value="uwa.androidclient.MapSearchActivity" />
       <intent-filter>

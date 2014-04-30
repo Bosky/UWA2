@@ -41,7 +41,7 @@ namespace UWA.AndroidClient
 
         private void MapsClicked(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(MapActivity));
+            var intent = new Intent(this, typeof(MapsActivity));
             StartActivity(intent);            
         }
 

@@ -16,13 +16,16 @@ namespace UWA.AndroidClient
     [MetaData("android.app.default_searchable", Value = "uwa.androidclient.MapSearchActivity")]
     [IntentFilter(new string[] { "android.intent.action.SEARCH" })]
     [Activity(Label = "Campus Map")]
-    public class MapActivity : Activity
+    public class MapsActivity : Android.GoogleMaps.MapActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Map);
-            // Create your application here
+
+            // Test data connection
+            Log.Info("MapsActivity", UwaApplication.DataManager.GetLocations().FirstOrDefault().Category);
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -48,6 +51,14 @@ namespace UWA.AndroidClient
             }
 
             return true;
+        }
+
+        protected override bool IsRouteDisplayed
+        {
+            get
+            {
+                return false;
+            }
         }
     }
 }

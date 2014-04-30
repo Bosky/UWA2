@@ -203,6 +203,9 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f050004
 			public const int eventsButtonText = 2131034116;
 			
+			// aapt resource value: 0x7f05000c
+			public const int google_APIkey_debug = 2131034124;
+			
 			// aapt resource value: 0x7f050005
 			public const int locationsPlaceholder = 2131034117;
 			

@@ -37,6 +37,9 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\..\..\..\..\Downloads\restsharp-104.1.0\restsharp-104.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,11 +61,20 @@
     <Compile Include="..\UWA.Core\BusinessLayer\Person.cs">
       <Link>BusinessLayer\Person.cs</Link>
     </Compile>
+    <Compile Include="..\UWA.Core\BusinessLayer\RSSEvent.cs">
+      <Link>BusinessLayer\RSSEvent.cs</Link>
+    </Compile>
     <Compile Include="..\UWA.Core\DataLayer\SQLite.cs">
       <Link>DataLayer\SQLite.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\DataLayer\UwaDatabase.cs">
       <Link>DataLayer\UwaDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\UWA.Core\ServiceAccessLayer\EventService.cs">
+      <Link>ServiceAccessLayer\EventService.cs</Link>
+    </Compile>
+    <Compile Include="..\UWA.Core\ServiceAccessLayer\RSSModel.cs">
+      <Link>ServiceAccessLayer\RSSModel.cs</Link>
     </Compile>
     <Compile Include="DataAccessLayer\DataManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

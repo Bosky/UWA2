@@ -54,6 +54,7 @@ public final class R {
         public static final int action_searchLocations=0x7f05000a;
         public static final int app_label=0x7f050007;
         public static final int eventsButtonText=0x7f050004;
+        public static final int google_APIkey_debug=0x7f05000c;
         public static final int locationsPlaceholder=0x7f050005;
         public static final int logo_label=0x7f050008;
         public static final int mapButtonText=0x7f050002;

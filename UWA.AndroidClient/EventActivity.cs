@@ -20,8 +20,6 @@ namespace UWA.AndroidClient
     [Activity(Label = "My Activity")]
     public class EventActivity : Activity
     {
-        const string sourceURI = "http://news.google.com/news?q=mobile%20world%20congress&output=rss";
-
         private IList<RSSEvent> _newsList;
         private ListView _eventListView;
         private ProgressDialog _progressDialog;
@@ -40,13 +38,6 @@ namespace UWA.AndroidClient
 
             this.GetEventFeed();
         }
-
-        //private void GetEventsFeed()
-        //{        
-            //Log.Info("News", "Startet method GetEventsFeed.");
-            //_newsList = EventService.GetFeed();
-            //Log.Info("News", "First feeditem: " + _newsList.FirstOrDefault().Description);
-        //}
 
         private void GetEventFeed()
         {

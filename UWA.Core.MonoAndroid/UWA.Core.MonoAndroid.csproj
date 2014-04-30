@@ -73,12 +73,6 @@
     <Compile Include="..\UWA.Core\ServiceAccessLayer\EventService.cs">
       <Link>ServiceAccessLayer\EventService.cs</Link>
     </Compile>
-    <Compile Include="..\UWA.Core\ServiceAccessLayer\NewsEntry.cs">
-      <Link>ServiceAccessLayer\NewsEntry.cs</Link>
-    </Compile>
-    <Compile Include="..\UWA.Core\ServiceAccessLayer\NewsService.cs">
-      <Link>ServiceAccessLayer\NewsService.cs</Link>
-    </Compile>
     <Compile Include="..\UWA.Core\ServiceAccessLayer\RSSModel.cs">
       <Link>ServiceAccessLayer\RSSModel.cs</Link>
     </Compile>

@@ -10,7 +10,6 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using UWA.Core.BusinessLayer.Contracts;
-using UWA.Core.DataAccessLayer;
 using UWA.Core.MonoAndroid;
 
 namespace UWA.AndroidClient
@@ -24,9 +23,9 @@ namespace UWA.AndroidClient
 
             SetContentView(Resource.Layout.Home);
 
-            var mButton = FindViewById<Button>(Resource.Id.mapButton);
-            var pButton = FindViewById<Button>(Resource.Id.peopleButton);
-            var eButton = FindViewById<Button>(Resource.Id.eventsButton);
+            var mButton = FindViewById<ImageButton>(Resource.Id.mapButton);
+            var pButton = FindViewById<ImageButton>(Resource.Id.peopleButton);
+            var eButton = FindViewById<ImageButton>(Resource.Id.eventsButton);
 
             mButton.Click += MapsClicked;
             pButton.Click += PeopleClicked;

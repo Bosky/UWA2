@@ -4,13 +4,14 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using SQLite;
-using UWA.Core.ServiceAccessLayer;
+using UWA.Core.BusinessLayer.Contracts;
 
-namespace UWA.Core.BusinessLayer.Contracts
+namespace UWA.Core.BusinessLayer
 {
     /// <summary>
     /// Maybe use enumeration later to specify the format in which the Event is displayed on screen.
     /// In example, Warning events would not display url and would have an appropriate image thumbnail.
+    /// TODO: Figure a way to turn the received string into enum without some weird conditional statement.
     /// </summary>
     public enum Category { ARTICLE, ANNOUNCEMENT, WARNING, }
 
@@ -26,6 +27,8 @@ namespace UWA.Core.BusinessLayer.Contracts
         public string Category { get; set; }
         public string Description { get; set; }
 
+
+       
         public RSSEvent() {}
 
         public RSSEvent(ServiceAccessLayer.item inputEvent)

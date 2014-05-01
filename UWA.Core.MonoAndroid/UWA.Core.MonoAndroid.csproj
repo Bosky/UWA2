@@ -58,11 +58,17 @@
     <Compile Include="..\UWA.Core\BusinessLayer\MapLocation.cs">
       <Link>BusinessLayer\MapLocation.cs</Link>
     </Compile>
+    <Compile Include="..\UWA.Core\BusinessLayer\MapLocationCategory.cs">
+      <Link>BusinessLayer\MapLocationCategory.cs</Link>
+    </Compile>
     <Compile Include="..\UWA.Core\BusinessLayer\Person.cs">
       <Link>BusinessLayer\Person.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\BusinessLayer\RSSEvent.cs">
       <Link>BusinessLayer\RSSEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\UWA.Core\DataAccessLayer\DataManager.cs">
+      <Link>DataAccessLayer\DataManager.cs</Link>
     </Compile>
     <Compile Include="..\UWA.Core\DataLayer\SQLite.cs">
       <Link>DataLayer\SQLite.cs</Link>
@@ -76,7 +82,6 @@
     <Compile Include="..\UWA.Core\ServiceAccessLayer\RSSModel.cs">
       <Link>ServiceAccessLayer\RSSModel.cs</Link>
     </Compile>
-    <Compile Include="DataAccessLayer\DataManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

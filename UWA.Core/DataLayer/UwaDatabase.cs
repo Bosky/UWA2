@@ -1,9 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using SQLite;
 using System.IO;
-using UWA.Core.BusinessLayer.Contracts;
+using UWA.Core.BusinessLayer;
 
 namespace UWA.Core.DataLayer
 {
@@ -105,7 +105,7 @@ namespace UWA.Core.DataLayer
             lock (Locker)
             {
                 List<MapLocation> mapLocations = (from m in Me.Table<MapLocation>()
-                                                  where m.Name == category
+                                                  where m.Category == category
                                                   select m).ToList();
 
                 return mapLocations;

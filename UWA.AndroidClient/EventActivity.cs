@@ -10,8 +10,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
+using Android.Webkit;
 using Android.Widget;
 using UWA.AndroidClient.Adapters;
+using UWA.Core.BusinessLayer;
 using UWA.Core.BusinessLayer.Contracts;
 using UWA.Core.ServiceAccessLayer;
 
@@ -20,7 +22,7 @@ namespace UWA.AndroidClient
     [Activity(Label = "My Activity")]
     public class EventActivity : Activity
     {
-        private IList<RSSEvent> _newsList;
+        private IList<RSSEvent> _eventsList;
         private ListView _eventListView;
         private ProgressDialog _progressDialog;
 
@@ -55,9 +57,9 @@ namespace UWA.AndroidClient
                 try
                 {
                     this._progressDialog.Dismiss();
-                    this._newsList = antecedent.Result;
+                    this._eventsList = antecedent.Result;
                     Log.Info("News", "Started populating list.");
-                    this.PopulateListView(this._newsList);
+                    this.PopulateListView(this._eventsList);
                 }
                 catch (AggregateException aex)
                 {
@@ -69,7 +71,7 @@ namespace UWA.AndroidClient
 
         private void PopulateListView(IList<RSSEvent> eventList)
         {
-            var adapter = new EventListAdapter(this, _newsList);
+            var adapter = new EventListAdapter(this, _eventsList);
             this._eventListView.Adapter = adapter;
             this._eventListView.ItemClick += OnListViewItemClick;
             Log.Info("News", "Finished populating list.");
@@ -77,8 +79,40 @@ namespace UWA.AndroidClient
 
         protected void OnListViewItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            var t = _newsList[e.Position];
-            Android.Widget.Toast.MakeText(this, t.Link, Android.Widget.ToastLength.Short).Show();
+            var selectedEvent = _eventsList[e.Position];
+
+            // Check for category of event to determine display format.
+            switch (selectedEvent.Category)
+            {
+                case("Warning"):
+                    DisplayWarning(selectedEvent);
+                    break;
+                case("Article"):
+                    DisplayArticle(selectedEvent);
+                    break;
+                default:
+                    Toast.MakeText(this, "Unkown event type :(", Android.Widget.ToastLength.Short).Show();
+                    break;
+            }
+
+        }
+
+        private void DisplayArticle(RSSEvent selectedEvent)
+        {
+            var intent = new Intent(this, typeof(EventWebViewActivity));
+            intent.PutExtra("Url", selectedEvent.Link);
+            StartActivity(intent);
+        }
+
+        private void DisplayWarning(RSSEvent selectedEvent)
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            AlertDialog dialog = builder.Create();
+
+            dialog.SetTitle("Notice");
+            dialog.SetMessage(selectedEvent.Description);
+            dialog.SetButton("Ok", (s, ev) => dialog.Dismiss());
+            dialog.Show();
         }
     }
 }

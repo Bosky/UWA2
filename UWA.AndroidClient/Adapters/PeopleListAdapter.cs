@@ -6,7 +6,7 @@ using Android.Provider;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using UWA.Core.BusinessLayer.Contracts;
+using UWA.Core.BusinessLayer;
 
 namespace UWA.AndroidClient.Adapters
 {
@@ -37,9 +37,9 @@ namespace UWA.AndroidClient.Adapters
 
             var view = (convertView ?? context.LayoutInflater.Inflate(Resource.Layout.PeopleListItem, parent, false)) as LinearLayout;
 
-            view.FindViewById<TextView>(Resource.Id.name).Text = String.Format(person.FirstName + " " + person.LastName);
+            view.FindViewById<TextView>(Resource.Id.peoplelist_name).Text = person.ToString();
 
-            view.FindViewById<TextView>(Resource.Id.office).Text = person.Office;
+            view.FindViewById<TextView>(Resource.Id.peoplelist_title).Text = person.Title;
             return view;
         }
 

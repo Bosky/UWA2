@@ -204,39 +204,55 @@ containing a value of this type.
         public static int common_signin_btn_text_normal_light=0x7f020015;
         public static int common_signin_btn_text_pressed_dark=0x7f020016;
         public static int common_signin_btn_text_pressed_light=0x7f020017;
-        public static int ic_action_search=0x7f020018;
-        public static int ic_action_view_as_list=0x7f020019;
-        public static int ic_plusone_medium_off_client=0x7f02001a;
-        public static int ic_plusone_small_off_client=0x7f02001b;
-        public static int ic_plusone_standard_off_client=0x7f02001c;
-        public static int ic_plusone_tall_off_client=0x7f02001d;
-        public static int ico_forward=0x7f02001e;
-        public static int icon=0x7f02001f;
-        public static int uwa_logo_240=0x7f020020;
-        public static int uwa_logo_480=0x7f020021;
+        public static int ic_action_call=0x7f020018;
+        public static int ic_action_email=0x7f020019;
+        public static int ic_action_person=0x7f02001a;
+        public static int ic_action_place=0x7f02001b;
+        public static int ic_action_search=0x7f02001c;
+        public static int ic_action_view_as_list=0x7f02001d;
+        public static int ic_action_warning=0x7f02001e;
+        public static int ic_plusone_medium_off_client=0x7f02001f;
+        public static int ic_plusone_small_off_client=0x7f020020;
+        public static int ic_plusone_standard_off_client=0x7f020021;
+        public static int ic_plusone_tall_off_client=0x7f020022;
+        public static int ico_forward=0x7f020023;
+        public static int icon=0x7f020024;
+        public static int uwa_logo_480=0x7f020025;
     }
     public static final class id {
-        public static int action_places=0x7f060014;
-        public static int action_search=0x7f060013;
+        public static int action_call=0x7f06001f;
+        public static int action_email=0x7f060020;
+        public static int action_places=0x7f06001e;
+        public static int action_search=0x7f06001d;
         public static int btnImgForward=0x7f060009;
+        public static int call_icon=0x7f06001a;
         public static int description=0x7f060007;
+        public static int email_icon=0x7f06001c;
         public static int eventIcon=0x7f060006;
         public static int eventListView=0x7f060005;
-        public static int eventsButton=0x7f06000e;
-        public static int fragmentContainer=0x7f06000f;
+        public static int eventsButton=0x7f060010;
+        public static int home_nav=0x7f06000d;
         public static int hybrid=0x7f060004;
-        public static int logo=0x7f06000b;
-        public static int logoLabel=0x7f06000a;
-        public static int mapButton=0x7f06000c;
-        public static int name=0x7f060011;
+        public static int logo=0x7f06000c;
+        public static int logoLabel=0x7f06000b;
+        public static int map=0x7f060011;
+        public static int mapButton=0x7f06000e;
         public static int none=0x7f060000;
         public static int normal=0x7f060001;
-        public static int office=0x7f060012;
-        public static int peopleButton=0x7f06000d;
-        public static int peopleListView=0x7f060010;
+        public static int peopleButton=0x7f06000f;
+        public static int peopleListView=0x7f060012;
+        public static int peoplelist_name=0x7f060013;
+        public static int peoplelist_title=0x7f060014;
         public static int pubDate=0x7f060008;
         public static int satellite=0x7f060002;
         public static int terrain=0x7f060003;
+        public static int viewperson_email=0x7f06001b;
+        public static int viewperson_info=0x7f060015;
+        public static int viewperson_name=0x7f060016;
+        public static int viewperson_office=0x7f060018;
+        public static int viewperson_phone=0x7f060019;
+        public static int viewperson_title=0x7f060017;
+        public static int webview=0x7f06000a;
     }
     public static final class integer {
         public static int google_play_services_version=0x7f080000;
@@ -244,18 +260,23 @@ containing a value of this type.
     public static final class layout {
         public static int events=0x7f030000;
         public static int eventslistitem=0x7f030001;
-        public static int home=0x7f030002;
-        public static int maps=0x7f030003;
-        public static int people=0x7f030004;
-        public static int peoplelistitem=0x7f030005;
+        public static int eventwebview=0x7f030002;
+        public static int home=0x7f030003;
+        public static int maps=0x7f030004;
+        public static int people=0x7f030005;
+        public static int peoplelistitem=0x7f030006;
+        public static int viewperson=0x7f030007;
     }
     public static final class menu {
         public static int mapmenu=0x7f090000;
+        public static int viewperson=0x7f090001;
     }
     public static final class string {
         public static int ApplicationName=0x7f07001c;
         public static int Hello=0x7f07001b;
         public static int Hmm=0x7f070021;
+        public static int action_call=0x7f070027;
+        public static int action_email=0x7f070028;
         public static int action_listLocations=0x7f070026;
         public static int action_searchLocations=0x7f070025;
         public static int app_name=0x7f070022;
@@ -354,8 +375,8 @@ containing a value of this type.
          */
         public static int common_signin_button_text_long=0x7f070013;
         public static int eventsButtonText=0x7f07001f;
-        public static int google_APIkey_debug=0x7f070027;
-        public static int google_APIkey_release=0x7f070028;
+        public static int google_APIkey_debug=0x7f070029;
+        public static int google_APIkey_release=0x7f07002a;
         /**  Location client code resources (prefix with location_client) 
          */
         public static int location_client_powered_by_google=0x7f07001a;

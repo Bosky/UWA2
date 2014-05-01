@@ -43,6 +43,7 @@
     <Compile Include="BusinessLayer\Contracts\BusinessEntityBase.cs" />
     <Compile Include="BusinessLayer\Contracts\IBusinessEntity.cs" />
     <Compile Include="BusinessLayer\MapLocation.cs" />
+    <Compile Include="BusinessLayer\MapLocationCategory.cs" />
     <Compile Include="BusinessLayer\Person.cs" />
     <Compile Include="BusinessLayer\Managers\MapLocationManager.cs" />
     <Compile Include="BusinessLayer\RSSEvent.cs" />

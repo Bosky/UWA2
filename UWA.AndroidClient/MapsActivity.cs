@@ -1,17 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Gms.Ads.Identifier;
 using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
 using Android.GoogleMaps;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Java.Lang;
+using UWA.Core.BusinessLayer;
+using UWA.Core.BusinessLayer.Contracts;
 
 namespace UWA.AndroidClient
 {
@@ -21,6 +27,7 @@ namespace UWA.AndroidClient
     public class MapsActivity : Android.GoogleMaps.MapActivity
     {
         private MapFragment _mapFragment;
+        private GoogleMap _map;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -29,24 +36,78 @@ namespace UWA.AndroidClient
 
             // Test data connection
             Log.Info("MapsActivity", UwaApplication.DataManager.GetLocations().FirstOrDefault().Category);
-            //var map = new MapView(this, "AIzaSyD7A1rcCWODSLEX64tBh4TiQYg1-pSSk1w");
-
-            _mapFragment = new MapFragment();
-            FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
-            fragmentTx.Add(Resource.Id.fragmentContainer, _mapFragment);
-            fragmentTx.Commit();
-
+            InitMapFragment();
             SetupMapPosition();
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            SetupMapPosition();
+        }
+
+        private void InitMapFragment()
+        {
+            _mapFragment = FragmentManager.FindFragmentByTag("map") as MapFragment;
+
+            if (_mapFragment == null)
+            {
+                GoogleMapOptions mapOptions = new GoogleMapOptions()
+                    .InvokeMapType(GoogleMap.MapTypeNormal)
+                    .InvokeZoomControlsEnabled(false)
+                    .InvokeCompassEnabled(true);
+
+                FragmentTransaction fragTx = FragmentManager.BeginTransaction();
+                _mapFragment = MapFragment.NewInstance(mapOptions);
+                fragTx.Add(Resource.Id.map, _mapFragment, "map");
+                fragTx.Commit();
+            }
+
         }
 
         private void SetupMapPosition()
         {
 
-            GoogleMap map = _mapFragment.Map;
+            if (_map == null)
+            {
+                _map = _mapFragment.Map;
 
-            _mapFragment.Controller.SetZoom(16);
-            _mapFragment.Controller.SetCenter(
-                   new GeoPoint((int)40.8270449E6, (int)-73.9279148E6));
+                if (_map != null)
+                {
+                    
+                    // try-catch statement tries to use Extra's as argument
+                    // if the there is no intent, the setup will continue as default.
+
+                    try
+                    {
+                        FocusOnLocation(Intent.GetStringArrayExtra("RequestedLocation"));
+                    }
+                    catch (NullPointerException exception)
+                    {
+
+                        Log.Info("MapsActivity", "No given intent extras.. resuming.");
+                    }
+
+                    MapLocation startLocation = UwaApplication.DataManager.GetLocations().FirstOrDefault();
+                    LatLng locationInfo = new LatLng(startLocation.Longitude, startLocation.Latitude);
+
+                    MarkerOptions marker1 = new MarkerOptions();
+                    marker1.SetPosition(locationInfo);
+                    marker1.SetTitle(startLocation.Name);
+                    _map.AddMarker(marker1);
+
+                    // We create an instance of CameraUpdate, and move the map to it.
+                    CameraUpdate cameraUpdate = CameraUpdateFactory.NewLatLngZoom(locationInfo, 15);
+                    _map.MoveCamera(cameraUpdate);
+                }
+            }
+        }
+
+        private void FocusOnLocation(string[] requestedLocation)
+        {
+            //IConvertible 
+            //var Longitude = requestedLocation[1].ToDouble();
+            // LatLng locationInfo = new LatLng(requestedLocation[1].to, requestedLocation[2]);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -62,13 +123,15 @@ namespace UWA.AndroidClient
         {
             if (item.ItemId == Resource.Id.action_search)
             {
-                OnSearchRequested();
+                string toast = string.Format("The search function is currently unvailable, my apologies.");
+                Toast.MakeText(this, toast, ToastLength.Long).Show();
             }
 
             if (item.ItemId == Resource.Id.action_places)
             {
-                string toast = string.Format("Opening location list navigation...maybe..");
-                Toast.MakeText(this, toast, ToastLength.Long).Show();
+                Log.Info("MapsActivity", "Starting places by categories event");
+                var intent = new Intent(this, typeof(MapLocationCategoriesActivity));
+                StartActivity(intent); 
             }
 
             return true;

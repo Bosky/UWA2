@@ -5,6 +5,7 @@ using System.Text;
 using Android.App;
 using Android.Views;
 using Android.Widget;
+using UWA.Core.BusinessLayer;
 using UWA.Core.BusinessLayer.Contracts;
 using UWA.Core.ServiceAccessLayer;
 

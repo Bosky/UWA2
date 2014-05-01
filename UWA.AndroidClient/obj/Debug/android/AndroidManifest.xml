@@ -23,6 +23,7 @@
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <uses-library android:name="com.google.android.maps" />
+    <activity android:label="UoW Locations by Category" android:name="uwa.androidclient.MapLocationsByCategoryActivity" />
     <activity android:icon="@drawable/icon" android:label="Worcester Mobile" android:name="uwa.androidclient.HomeActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -30,7 +31,10 @@
       </intent-filter>
     </activity>
     <activity android:label="People" android:name="uwa.androidclient.PeopleActivity" />
+    <activity android:label="UoW Locations by Category" android:name="uwa.androidclient.MapLocationCategoriesActivity" />
+    <activity android:label="View Article" android:name="uwa.androidclient.EventWebViewActivity" />
     <activity android:label="My Activity" android:name="uwa.androidclient.EventActivity" />
+    <activity android:label="Person" android:name="uwa.androidclient.ViewPersonActivity" />
     <activity android:label="Campus Map" android:launchMode="singleTop" android:name="uwa.androidclient.MapSearchActivity">
       <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
       <intent-filter>

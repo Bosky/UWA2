@@ -1,10 +1,8 @@
 ﻿
-using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design.Serialization;
 using System.Diagnostics;
 using RestSharp;
-using UWA.Core.BusinessLayer.Contracts;
+using UWA.Core.BusinessLayer;
 
 namespace UWA.Core.ServiceAccessLayer
 {

@@ -10,13 +10,18 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using UWA.Core.BusinessLayer;
 using UWA.Core.BusinessLayer.Contracts;
 using UWA.Core.BusinessLayer.Managers;
 
 namespace UWA.AndroidClient
 {
  
-
+    /// <summary>
+    /// MapSearchActivity handles the heavy lifting by forwarding the search 
+    /// queries down to the business logic and populating markers according to given response.
+    /// TODO: MapSearchActivity is not able to intents from MapActivity.
+    /// </summary>
     [Activity(Label = "Campus Map", LaunchMode = Android.Content.PM.LaunchMode.SingleTop)]
     [IntentFilter(new string[] { "android.intent.action.SEARCH" })]
     [MetaData("android.app.searchable", Resource = "@xml/searchable")]
@@ -44,16 +49,16 @@ namespace UWA.AndroidClient
             if (Intent.ActionSearch.Equals(intent.Action))
             {
                 string query = intent.GetStringExtra(SearchManager.Query);
-                ShowLocations(query);
+                //SearchLocations(query);
             }
         }
 
-        void ShowLocations(string query)
-        {
-            IMapLocationManager mapManager = new MapLocationManager();
-            _results = mapManager.Search(query);
-            PopulateResults();
-        }
+        //void SearchLocations(string query)
+        //{
+        //    IMapLocationManager mapManager = new MapLocationManager();
+        //    _results = mapManager.Search(query);
+        //    PopulateResults();
+        //}
 
         private void PopulateResults()
         {

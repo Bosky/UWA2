@@ -219,34 +219,46 @@ namespace UWA.AndroidClient
 			public const int common_signin_btn_text_pressed_light = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int ic_action_search = 2130837528;
+			public const int ic_action_call = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int ic_action_view_as_list = 2130837529;
+			public const int ic_action_email = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int ic_plusone_medium_off_client = 2130837530;
+			public const int ic_action_person = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int ic_plusone_small_off_client = 2130837531;
+			public const int ic_action_place = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int ic_plusone_standard_off_client = 2130837532;
+			public const int ic_action_search = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int ic_plusone_tall_off_client = 2130837533;
+			public const int ic_action_view_as_list = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int ico_forward = 2130837534;
+			public const int ic_action_warning = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int Icon = 2130837535;
+			public const int ic_plusone_medium_off_client = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int uwa_logo_240 = 2130837536;
+			public const int ic_plusone_small_off_client = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int uwa_logo_480 = 2130837537;
+			public const int ic_plusone_standard_off_client = 2130837537;
+			
+			// aapt resource value: 0x7f020022
+			public const int ic_plusone_tall_off_client = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int ico_forward = 2130837539;
+			
+			// aapt resource value: 0x7f020024
+			public const int Icon = 2130837540;
+			
+			// aapt resource value: 0x7f020025
+			public const int uwa_logo_480 = 2130837541;
 			
 			static Drawable()
 			{
@@ -261,17 +273,29 @@ namespace UWA.AndroidClient
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060014
-			public const int action_places = 2131099668;
+			// aapt resource value: 0x7f06001f
+			public const int action_call = 2131099679;
 			
-			// aapt resource value: 0x7f060013
-			public const int action_search = 2131099667;
+			// aapt resource value: 0x7f060020
+			public const int action_email = 2131099680;
+			
+			// aapt resource value: 0x7f06001e
+			public const int action_places = 2131099678;
+			
+			// aapt resource value: 0x7f06001d
+			public const int action_search = 2131099677;
 			
 			// aapt resource value: 0x7f060009
 			public const int btnImgForward = 2131099657;
 			
+			// aapt resource value: 0x7f06001a
+			public const int call_icon = 2131099674;
+			
 			// aapt resource value: 0x7f060007
 			public const int description = 2131099655;
+			
+			// aapt resource value: 0x7f06001c
+			public const int email_icon = 2131099676;
 			
 			// aapt resource value: 0x7f060006
 			public const int eventIcon = 2131099654;
@@ -279,26 +303,26 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f060005
 			public const int eventListView = 2131099653;
 			
-			// aapt resource value: 0x7f06000e
-			public const int eventsButton = 2131099662;
+			// aapt resource value: 0x7f060010
+			public const int eventsButton = 2131099664;
 			
-			// aapt resource value: 0x7f06000f
-			public const int fragmentContainer = 2131099663;
+			// aapt resource value: 0x7f06000d
+			public const int home_nav = 2131099661;
 			
 			// aapt resource value: 0x7f060004
 			public const int hybrid = 2131099652;
 			
-			// aapt resource value: 0x7f06000b
-			public const int logo = 2131099659;
-			
-			// aapt resource value: 0x7f06000a
-			public const int logoLabel = 2131099658;
-			
 			// aapt resource value: 0x7f06000c
-			public const int mapButton = 2131099660;
+			public const int logo = 2131099660;
+			
+			// aapt resource value: 0x7f06000b
+			public const int logoLabel = 2131099659;
 			
 			// aapt resource value: 0x7f060011
-			public const int name = 2131099665;
+			public const int map = 2131099665;
+			
+			// aapt resource value: 0x7f06000e
+			public const int mapButton = 2131099662;
 			
 			// aapt resource value: 0x7f060000
 			public const int none = 2131099648;
@@ -306,14 +330,17 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f060001
 			public const int normal = 2131099649;
 			
+			// aapt resource value: 0x7f06000f
+			public const int peopleButton = 2131099663;
+			
 			// aapt resource value: 0x7f060012
-			public const int office = 2131099666;
+			public const int peopleListView = 2131099666;
 			
-			// aapt resource value: 0x7f06000d
-			public const int peopleButton = 2131099661;
+			// aapt resource value: 0x7f060013
+			public const int peoplelist_name = 2131099667;
 			
-			// aapt resource value: 0x7f060010
-			public const int peopleListView = 2131099664;
+			// aapt resource value: 0x7f060014
+			public const int peoplelist_title = 2131099668;
 			
 			// aapt resource value: 0x7f060008
 			public const int pubDate = 2131099656;
@@ -323,6 +350,27 @@ namespace UWA.AndroidClient
 			
 			// aapt resource value: 0x7f060003
 			public const int terrain = 2131099651;
+			
+			// aapt resource value: 0x7f06001b
+			public const int viewperson_email = 2131099675;
+			
+			// aapt resource value: 0x7f060015
+			public const int viewperson_info = 2131099669;
+			
+			// aapt resource value: 0x7f060016
+			public const int viewperson_name = 2131099670;
+			
+			// aapt resource value: 0x7f060018
+			public const int viewperson_office = 2131099672;
+			
+			// aapt resource value: 0x7f060019
+			public const int viewperson_phone = 2131099673;
+			
+			// aapt resource value: 0x7f060017
+			public const int viewperson_title = 2131099671;
+			
+			// aapt resource value: 0x7f06000a
+			public const int webview = 2131099658;
 			
 			static Id()
 			{
@@ -360,16 +408,22 @@ namespace UWA.AndroidClient
 			public const int EventsListItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Home = 2130903042;
+			public const int EventWebView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Maps = 2130903043;
+			public const int Home = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int People = 2130903044;
+			public const int Maps = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int PeopleListItem = 2130903045;
+			public const int People = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int PeopleListItem = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int ViewPerson = 2130903047;
 			
 			static Layout()
 			{
@@ -386,6 +440,9 @@ namespace UWA.AndroidClient
 			
 			// aapt resource value: 0x7f090000
 			public const int MapMenu = 2131296256;
+			
+			// aapt resource value: 0x7f090001
+			public const int ViewPerson = 2131296257;
 			
 			static Menu()
 			{
@@ -408,6 +465,12 @@ namespace UWA.AndroidClient
 			
 			// aapt resource value: 0x7f070021
 			public const int Hmm = 2131165217;
+			
+			// aapt resource value: 0x7f070027
+			public const int action_call = 2131165223;
+			
+			// aapt resource value: 0x7f070028
+			public const int action_email = 2131165224;
 			
 			// aapt resource value: 0x7f070026
 			public const int action_listLocations = 2131165222;
@@ -499,11 +562,11 @@ namespace UWA.AndroidClient
 			// aapt resource value: 0x7f07001f
 			public const int eventsButtonText = 2131165215;
 			
-			// aapt resource value: 0x7f070027
-			public const int google_APIkey_debug = 2131165223;
+			// aapt resource value: 0x7f070029
+			public const int google_APIkey_debug = 2131165225;
 			
-			// aapt resource value: 0x7f070028
-			public const int google_APIkey_release = 2131165224;
+			// aapt resource value: 0x7f07002a
+			public const int google_APIkey_release = 2131165226;
 			
 			// aapt resource value: 0x7f07001a
 			public const int location_client_powered_by_google = 2131165210;

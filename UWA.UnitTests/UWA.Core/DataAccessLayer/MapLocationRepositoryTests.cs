@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Moq;
 using NBehave.Spec.NUnit;
 using NUnit.Framework;
+using UWA.Core.BusinessLayer;
 using UWA.Core.BusinessLayer.Contracts;
 using UWA.Core.DataAccessLayer;
 

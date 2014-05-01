@@ -1,9 +1,13 @@
+UWA.AndroidClient.MapLocationsByCategoryActivity;uwa.androidclient.MapLocationsByCategoryActivity
 UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
 UWA.AndroidClient.PeopleActivity;uwa.androidclient.PeopleActivity
 UWA.AndroidClient.Adapters.PeopleListAdapter;uwa.androidclient.adapters.PeopleListAdapter
 UWA.AndroidClient.Adapters.EventListAdapter;uwa.androidclient.adapters.EventListAdapter
+UWA.AndroidClient.MapLocationCategoriesActivity;uwa.androidclient.MapLocationCategoriesActivity
+UWA.AndroidClient.EventWebViewActivity;uwa.androidclient.EventWebViewActivity
 UWA.AndroidClient.EventActivity;uwa.androidclient.EventActivity
 UWA.AndroidClient.UwaApplication;uwa.androidclient.UwaApplication
+UWA.AndroidClient.ViewPersonActivity;uwa.androidclient.ViewPersonActivity
 UWA.AndroidClient.MapSearchActivity;uwa.androidclient.MapSearchActivity
 UWA.AndroidClient.MapsActivity;uwa.androidclient.MapsActivity
 Android.Gms.Maps.GoogleMap.IOnCameraChangeListenerImplementor;mono.com.google.android.gms.maps.GoogleMap_OnCameraChangeListenerImplementor

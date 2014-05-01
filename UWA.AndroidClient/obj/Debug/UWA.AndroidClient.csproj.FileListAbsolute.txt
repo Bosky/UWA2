@@ -20,6 +20,7 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\events.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\eventslistitem.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\maps.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\viewperson.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\icon.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ico_forward.png
@@ -27,7 +28,13 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\menu\mapmenu.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_search.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_view_as_list.png
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\uwa_logo_240.jpg
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\uwa_logo_480.jpg
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\menu\viewperson.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_call.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_place.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_person.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_warning.png
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ic_action_email.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\uploadflags.txt
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\eventwebview.xml

@@ -8,3 +8,5 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Release\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Release\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Release\uploadflags.txt
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Release\RestSharp.MonoDroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Release\RestSharp.MonoDroid.dll.mdb

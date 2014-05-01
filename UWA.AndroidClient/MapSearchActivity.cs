@@ -27,7 +27,7 @@ namespace UWA.AndroidClient
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Map);
+            SetContentView(Resource.Layout.Maps);
 
             HandleIntent(Intent);
             // Create your application here

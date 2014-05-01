@@ -1,0 +1,7 @@
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Release\UWA.Core.dll.config
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Release\UWA.Core.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Release\UWA.Core.pdb
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\bin\Release\RestSharp.MonoDroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Release\UWA.Core.csprojResolveAssemblyReference.cache
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Release\UWA.Core.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core\obj\Release\UWA.Core.pdb

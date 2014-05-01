@@ -3,11 +3,11 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\UWA.Core.MonoAndroid.dll.mdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\UWA.Core.MonoAndroid.apk
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\UWA.Core.MonoAndroid-Signed.apk
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\RestSharp.MonoDroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\RestSharp.MonoDroid.dll.mdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\UWA.Core.MonoAndroid.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\UWA.Core.MonoAndroid.pdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\android\bin\UWA.Core.MonoAndroid.apk
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\obj\Debug\uploadflags.txt
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\RestSharp.MonoDroid.dll
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\RestSharp.MonoDroid.dll.mdb

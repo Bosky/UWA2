@@ -1,6 +1,8 @@
+UWA.AndroidClient.Adapters.EventListAdapter;uwa.androidclient.adapters.EventListAdapter
 UWA.AndroidClient.Adapters.PeopleListAdapter;uwa.androidclient.adapters.PeopleListAdapter
+UWA.AndroidClient.EventActivity;uwa.androidclient.EventActivity
 UWA.AndroidClient.HomeActivity;uwa.androidclient.HomeActivity
-UWA.AndroidClient.MapActivity;uwa.androidclient.MapActivity
+UWA.AndroidClient.MapsActivity;uwa.androidclient.MapsActivity
 UWA.AndroidClient.MapSearchActivity;uwa.androidclient.MapSearchActivity
 UWA.AndroidClient.PeopleActivity;uwa.androidclient.PeopleActivity
 UWA.AndroidClient.UwaApplication;uwa.androidclient.UwaApplication

@@ -11,7 +11,6 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Rel
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\home.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\people.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\peoplelistitem.xml
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\map.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\drawable\icon.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\drawable\ico_forward.png
@@ -23,3 +22,13 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Rel
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\drawable\uwa_logo_480.jpg
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\uploadflags.txt
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\GooglePlayServicesLib.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\RestSharp.MonoDroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\Xamarin.Android.Support.v4.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\UWA.Core.MonoAndroid.dll.mdb
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\RestSharp.MonoDroid.dll.mdb
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\events.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\eventslistitem.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Release\res\layout\maps.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Release\Xamarin.Android.Support.v7.MediaRouter.dll

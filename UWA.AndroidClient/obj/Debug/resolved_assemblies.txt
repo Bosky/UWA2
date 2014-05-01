@@ -1,3 +1,5 @@
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.AndroidClient.dll
+D:\Downloads\googleplayservices-16.0\googleplayservices-16.0\lib\android\GooglePlayServicesLib.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.Core.MonoAndroid\bin\Debug\UWA.Core.MonoAndroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\Xamarin.Android.Support.v4.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll

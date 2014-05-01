@@ -3,9 +3,13 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.AndroidClient.dll.mdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.AndroidClient.apk
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.AndroidClient-Signed.apk
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\GooglePlayServicesLib.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.Core.MonoAndroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\Xamarin.Android.Support.v4.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.Core.MonoAndroid.pdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\UWA.Core.MonoAndroid.dll.mdb
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll.mdb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.csprojResolveAssemblyReference.cache
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.dll
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\UWA.AndroidClient.pdb
@@ -13,7 +17,9 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\home.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\people.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\peoplelistitem.xml
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\map.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\events.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\eventslistitem.xml
+D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\maps.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\values\strings.xml
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\icon.png
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\ico_forward.png
@@ -25,7 +31,3 @@ D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Deb
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\drawable\uwa_logo_480.jpg
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\R.cs.flag
 D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\uploadflags.txt
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\bin\Debug\RestSharp.MonoDroid.dll.mdb
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\events.xml
-D:\Uni\Advanced OOP\Mobile Application Development\UWA\UWA.AndroidClient\obj\Debug\res\layout\eventslistitem.xml

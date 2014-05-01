@@ -67,8 +67,10 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"UWA.AndroidClient.dll",
+		"GooglePlayServicesLib.dll",
 		"UWA.Core.MonoAndroid.dll",
 		"RestSharp.MonoDroid.dll",
+		"Mono.Android.GoogleMaps.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

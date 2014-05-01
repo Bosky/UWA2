@@ -5,6 +5,8 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Gms.Maps;
+using Android.GoogleMaps;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
@@ -18,14 +20,33 @@ namespace UWA.AndroidClient
     [Activity(Label = "Campus Map")]
     public class MapsActivity : Android.GoogleMaps.MapActivity
     {
+        private MapFragment _mapFragment;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Map);
+            SetContentView(Resource.Layout.Maps);
 
             // Test data connection
             Log.Info("MapsActivity", UwaApplication.DataManager.GetLocations().FirstOrDefault().Category);
+            //var map = new MapView(this, "AIzaSyD7A1rcCWODSLEX64tBh4TiQYg1-pSSk1w");
 
+            _mapFragment = new MapFragment();
+            FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
+            fragmentTx.Add(Resource.Id.fragmentContainer, _mapFragment);
+            fragmentTx.Commit();
+
+            SetupMapPosition();
+        }
+
+        private void SetupMapPosition()
+        {
+
+            GoogleMap map = _mapFragment.Map;
+
+            _mapFragment.Controller.SetZoom(16);
+            _mapFragment.Controller.SetCenter(
+                   new GeoPoint((int)40.8270449E6, (int)-73.9279148E6));
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

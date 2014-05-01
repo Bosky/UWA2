@@ -46,10 +46,17 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\..\..\..\..\Downloads\googleplayservices-16.0\googleplayservices-16.0\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.GoogleMaps" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,9 +70,7 @@
     <Compile Include="HomeActivity.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MapActivity.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="MapsActivity.cs" />
     <Compile Include="MapSearchActivity.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -88,11 +93,11 @@
     <AndroidResource Include="Resources\Layout\PeopleListItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\Layout\Map.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\Layout\Events.axml" />
     <AndroidResource Include="Resources\Layout\EventsListItem.axml" />
+    <AndroidResource Include="Resources\Layout\Maps.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
